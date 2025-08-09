@@ -1,5 +1,6 @@
 * { box-sizing: border-box; }
 html, body, #root { height: 100%; }
+html { scroll-behavior: smooth; scroll-padding-top: 72px; }
 body {
   margin: 0;
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif;
@@ -38,6 +39,7 @@ img { max-width: 100%; display: block; }
 * { transition: color .15s ease, background-color .2s ease, border-color .2s ease, box-shadow .2s ease, transform .15s ease; }
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; }
+  html { scroll-behavior: auto; }
 }
 
 .container {
@@ -82,6 +84,7 @@ header.site-header {
 .skip-link:focus { left: 12px; top: 12px; z-index: 100; background: var(--card); color: var(--text); padding: 8px 12px; border-radius: 8px; border: 1px solid var(--border); box-shadow: 0 6px 18px rgba(0,0,0,0.18); }
 
 section { padding: 80px 0; }
+section { scroll-margin-top: 72px; }
 section .section-title {
   font-size: 28px; font-weight: 700; margin: 0 0 18px 0;
   background: linear-gradient(90deg, var(--brand), var(--brand-2));

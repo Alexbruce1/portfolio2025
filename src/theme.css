@@ -1,0 +1,24 @@
+:root {
+  --bg: #0b1020;
+  --bg-elev: #111836;
+  --text: #e7eaf6;
+  --muted: #b6bdd6;
+  --brand: #6aa3ff;
+  --brand-2: #9b7bff;
+  --card: #0f1530;
+  --border: #263056;
+  --ok: #2ecc71;
+  --warn: #f39c12;
+  --error: #e74c3c;
+}
+
+[data-theme="light"] {
+  --bg: #f7f9ff;
+  --bg-elev: #eef2ff;
+  --text: #0f1222;
+  --muted: #515a7d;
+  --brand: #3a72ff;
+  --brand-2: #7f58ff;
+  --card: #ffffff;
+  --border: #c8cfe8;
+}

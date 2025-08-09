@@ -23,10 +23,14 @@ export default function Education() {
             </div>
           </article>
 
-          <article className="card" aria-labelledby="edu-utaustin">
+          <article className="card highlight" aria-labelledby="edu-utaustin">
             <div className="body">
               <h3 id="edu-utaustin">The University of Texas at Austin</h3>
               <p className="muted" style={{marginTop: 6}}>Graduate Certificate — Data Science and Business Analytics (Apr 2025 – Dec 2025)</p>
+              <div className="tags" style={{marginTop: 8}}>
+                <span className="pill company">Featured</span>
+                <span className="pill">In Progress</span>
+              </div>
               <div className="tags" style={{marginTop: 10}}>
                 <span className="pill">Python</span>
                 <span className="pill">Machine Learning</span>

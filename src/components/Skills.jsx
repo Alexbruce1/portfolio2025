@@ -1,10 +1,34 @@
 import React from 'react';
 
 const SKILLS = [
-  'JavaScript', 'TypeScript', 'Python', 'Ruby', 'SQL', 'React', 'Redux', 'Node.js', 'HTML', 'CSS/SCSS',
-  'Git/GitHub', 'AWS', 'NPM', 'Postman', 'Jest', 'Mocha', 'Chai', 'Playwright', 'Selenium', 'Cucumber', 'Capybara',
-  'CI/CD (Jenkins, CircleCI)', 'Jira', 'Rally',
-  'Agile', 'TDD', 'Pair Programming', 'Code Reviews'
+  { name: 'JavaScript' },
+  { name: 'TypeScript' },
+  { name: 'Python' },
+  { name: 'Ruby' },
+  { name: 'SQL' },
+  { name: 'React' },
+  { name: 'Redux' },
+  { name: 'Node.js' },
+  { name: 'HTML' },
+  { name: 'CSS/SCSS' },
+  { name: 'Git/GitHub' },
+  { name: 'AWS' },
+  { name: 'NPM' },
+  { name: 'Postman' },
+  { name: 'Jest' },
+  { name: 'Mocha' },
+  { name: 'Chai' },
+  { name: 'Playwright' },
+  { name: 'Selenium' },
+  { name: 'Cucumber' },
+  { name: 'Capybara' },
+  { name: 'CI/CD (Jenkins, CircleCI)' },
+  { name: 'Jira' },
+  { name: 'Rally' },
+  { name: 'Agile' },
+  { name: 'TDD' },
+  { name: 'Pair Programming' },
+  { name: 'Code Reviews' },
 ];
 
 export default function Skills() {
@@ -14,7 +38,10 @@ export default function Skills() {
         <h2 id="skills-title" className="section-title">Skills</h2>
         <div className="skills">
           {SKILLS.map((s) => (
-            <span key={s} className="pill">{s}</span>
+            <span key={s.name} className="pill">
+              {s.name}
+              {s.exp ? <span className="meta">• {s.exp}</span> : null}
+            </span>
           ))}
         </div>
       </div>

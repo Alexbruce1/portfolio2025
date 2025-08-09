@@ -122,3 +122,7 @@ footer {
   .nav-links .hide-sm { display: none; }
   .contact-links { flex-wrap: wrap; }
 }
+
+/* Featured card highlight and skill meta */
+.card.highlight { border-color: color-mix(in srgb, var(--brand) 45%, var(--border)); box-shadow: 0 12px 36px rgba(0,0,0,0.18); }
+.pill .meta { color: var(--muted); margin-left: 6px; font-size: 12px; opacity: .9; }

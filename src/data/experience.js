@@ -15,7 +15,7 @@ export const experience = [
   {
     company: 'Nextworld',
     role: 'Application Developer',
-    location: 'United States — Hybrid',
+    location: 'Greenwood Village, CO — Hybrid',
     start: 'Dec 2022',
     end: 'Mar 2024',
     bullets: [

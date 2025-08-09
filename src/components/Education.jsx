@@ -14,7 +14,7 @@ export default function Education() {
           <article className="card" aria-labelledby="edu-turing">
             <div className="body">
               <h3 id="edu-turing">Turing School of Software & Design</h3>
-              <p className="muted" style={{marginTop: 6}}>Front End Engineering — completed program; 2,100+ hours and 30+ projects.</p>
+              <p className="muted" style={{marginTop: 6}}>Front‑End Engineering (2018–2019) — completed; 2,100+ hours and 30+ projects.</p>
               <div className="tags" style={{marginTop: 8}}>
                 <span className="pill success">Completed</span>
                 <span className="pill">Mentor</span>

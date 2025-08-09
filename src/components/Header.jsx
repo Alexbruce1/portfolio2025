@@ -9,6 +9,7 @@ export default function Header({ onToggleTheme, theme }) {
           <a href="#projects" className="hide-sm">Projects</a>
           <a href="#experience" className="hide-sm">Experience</a>
           <a href="#education" className="hide-sm">Education</a>
+          <a href="#certifications" className="hide-sm">Certifications</a>
           <a href="#about" className="hide-sm">About</a>
           <a href="#skills" className="hide-sm">Skills</a>
           <a href="#contact">Contact</a>

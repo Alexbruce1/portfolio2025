@@ -6,13 +6,10 @@ export default function About() {
       <div className="container">
         <h2 id="about-title" className="section-title">About</h2>
         <p className="muted" style={{maxWidth: 800}}>
-          I’m a software developer with a foundation in frontend and full‑stack development, a strong background
-          in QA and test automation, and a growing skill set in data science and machine learning. I thrive in Agile teams
-          where collaboration and iteration lead to meaningful, user‑focused solutions.
+          I’m a software engineer with a focus on front‑end and full‑stack development, and a solid foundation in quality engineering. I enjoy building interfaces that feel great to use and pairing them with reliable, well‑tested back ends.
         </p>
         <p className="muted" style={{maxWidth: 800}}>
-          Outside of work, you’ll usually find me on an overlanding trip, tinkering with cars, chasing lap times at the track,
-          taking photos, or spending time with my wife and dogs.
+          I like simplifying complex problems into clean, maintainable solutions that move the business forward. I work best in collaborative, Agile teams where iteration, thoughtful code review, and test‑driven development lead to predictable delivery and high‑quality software.
         </p>
       </div>
     </section>

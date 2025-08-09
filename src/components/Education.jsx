@@ -26,11 +26,12 @@ export default function Education() {
           <article className="card" aria-labelledby="edu-utaustin">
             <div className="body">
               <h3 id="edu-utaustin">The University of Texas at Austin</h3>
-              <p className="muted" style={{marginTop: 6}}>Current program — In progress. Actively expanding my engineering toolkit and modern best practices.</p>
+              <p className="muted" style={{marginTop: 6}}>Graduate Certificate — Data Science and Business Analytics (Apr 2025 – Dec 2025)</p>
               <div className="tags" style={{marginTop: 10}}>
-                <span className="pill">Continued Education</span>
-                <span className="pill">Professional Development</span>
-                <span className="pill">Modern Web</span>
+                <span className="pill">Python</span>
+                <span className="pill">Machine Learning</span>
+                <span className="pill">Statistics</span>
+                <span className="pill">Data Visualization</span>
               </div>
             </div>
           </article>
@@ -39,4 +40,3 @@ export default function Education() {
     </section>
   );
 }
-

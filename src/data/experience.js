@@ -15,6 +15,7 @@ export const experience = [
   {
     company: 'Nextworld',
     role: 'Application Developer',
+    location: 'United States — Hybrid',
     start: 'Dec 2022',
     end: 'Mar 2024',
     bullets: [
@@ -27,6 +28,7 @@ export const experience = [
   {
     company: 'Aetna Digital',
     role: 'Quality Engineer',
+    location: 'Denver, CO — Remote',
     start: 'Apr 2019',
     end: 'Dec 2022',
     bullets: [
@@ -36,4 +38,3 @@ export const experience = [
     ]
   }
 ];
-

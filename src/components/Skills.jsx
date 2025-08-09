@@ -43,7 +43,18 @@ export default function Skills() {
       <div className="container">
         <h2 id="skills-title" className="section-title">Skills</h2>
         <div className="skills">
-          {SKILLS.map((s) => (
+          {SKILLS.slice().sort((a, b) => {
+            const score = (exp) => {
+              if (!exp) return 0;
+              const lower = String(exp).toLowerCase();
+              if (lower.includes('in progress')) return 0.5;
+              if (lower.includes('coursework')) return 0.4;
+              const num = parseFloat(lower.replace(/[^0-9.]+/g, ' ').trim());
+              if (Number.isFinite(num)) return num + (lower.includes('+') ? 0.1 : 0);
+              return 0;
+            };
+            return score(b.exp) - score(a.exp);
+          }).map((s) => (
             <span key={s.name} className="pill">
               {s.name}
               {s.exp ? <span className="meta">• {s.exp}</span> : null}

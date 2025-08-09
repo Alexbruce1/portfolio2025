@@ -5,7 +5,10 @@ export default function Hero() {
     <section id="home" className="hero" aria-labelledby="home-title">
       <div className="container hero-grid">
         <div>
-          <span className="pill" aria-label="Status: Available for work in Denver, Colorado">Available for work • Denver, CO</span>
+          <span className="pill availability" aria-label="Status: Available for work in Denver, Colorado" title="Available now">
+            <span aria-hidden="true" className="dot-online"></span>
+            Available for work • Denver, CO
+          </span>
           <h1 id="home-title">Alex Bruce</h1>
           <p className="subtitle">Software Developer — Frontend, Full‑Stack, and QA Automation</p>
           <p className="muted" style={{marginBottom: 18}}>

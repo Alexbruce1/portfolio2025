@@ -14,12 +14,10 @@ export default function Education() {
           <article className="card" aria-labelledby="edu-turing">
             <div className="body">
               <h3 id="edu-turing">Turing School of Software & Design</h3>
-              <p className="muted" style={{marginTop: 6}}>Software Development — Focus on modern frontend and full‑stack practices.</p>
-              <div className="tags" style={{marginTop: 10}}>
-                <span className="pill">JavaScript</span>
-                <span className="pill">React</span>
-                <span className="pill">Testing</span>
-                <span className="pill">Agile</span>
+              <p className="muted" style={{marginTop: 6}}>Front End Engineering — completed program; 2,100+ hours and 30+ projects.</p>
+              <div className="tags" style={{marginTop: 8}}>
+                <span className="pill success">Completed</span>
+                <span className="pill">Mentor</span>
               </div>
             </div>
           </article>

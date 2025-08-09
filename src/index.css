@@ -61,8 +61,15 @@ header.site-header {
 .brand { font-weight: 700; letter-spacing: 0.3px; }
 .brand .dot { color: var(--brand); }
 .nav-links { display: flex; gap: 18px; align-items: center; }
-.nav-links a { opacity: 0.85; }
+.nav-links a { position: relative; opacity: 0.85; }
 .nav-links a:hover { opacity: 1; color: var(--brand); }
+.nav-links a.active { opacity: 1; color: var(--brand); }
+.nav-links a.active::after {
+  content: "";
+  position: absolute; left: 0; right: 0; bottom: -10px; height: 2px;
+  background: linear-gradient(90deg, var(--brand), var(--brand-2));
+  border-radius: 2px;
+}
 .brand:hover { color: var(--brand); background: linear-gradient(90deg, var(--brand), var(--brand-2)); -webkit-background-clip: text; background-clip: text; color: transparent; }
 .btn {
   display: inline-flex; align-items: center; justify-content: center;

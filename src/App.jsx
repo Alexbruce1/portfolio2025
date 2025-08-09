@@ -1,5 +1,5 @@
 import React, { useEffect, useMemo, useState } from 'react';
-import { Header, Hero, Projects, About, Skills, Experience, Education, Certifications, Contact, Footer } from './components/index.js';
+import { Header, Hero, Projects, About, Skills, Experience, Education, Certifications, Contact, Footer, BackToTop } from './components/index.js';
 
 const THEME_KEY = 'portfolio:theme';
 
@@ -39,6 +39,7 @@ export default function App() {
         <Contact />
       </main>
       <Footer year={year} />
+      <BackToTop />
     </>
   );
 }

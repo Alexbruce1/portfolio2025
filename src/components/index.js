@@ -9,3 +9,4 @@ export { default as Footer } from './Footer.jsx';
 export { default as Experience } from './Experience.jsx';
 export { default as Education } from './Education.jsx';
 export { default as Certifications } from './Certifications.jsx';
+export { default as BackToTop } from './BackToTop.jsx';

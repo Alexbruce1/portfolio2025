@@ -8,7 +8,7 @@ export default function Experience() {
         <h2 id="experience-title" className="section-title">Experience</h2>
         <div style={{display:'flex', flexDirection:'column', gap: 16}}>
           {experience.map((item) => (
-            <article key={item.company + item.role} className="card">
+            <article key={item.company + item.role} className={`card${item.highlight ? ' highlight' : ''}`}>
               <div className="body">
                 <div style={{display:'flex', justifyContent:'space-between', gap: 12, flexWrap:'wrap'}}>
                   <div>

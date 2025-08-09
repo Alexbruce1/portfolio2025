@@ -1,10 +1,10 @@
 import React from 'react';
 
 export default function ProjectCard({ project }) {
-  const { title, description, tags, links, company } = project;
+  const { title, description, tags, links, company, highlight } = project;
   const titleId = `project-${title.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`;
   return (
-    <article className="card" aria-labelledby={titleId}>
+    <article className={`card${highlight ? ' highlight' : ''}`} aria-labelledby={titleId}>
       <div className="body">
         <div style={{display:'flex', justifyContent:'space-between', alignItems:'center', gap: 8, flexWrap:'wrap'}}>
           <h3 id={titleId} style={{margin: 0}}>{title}</h3>

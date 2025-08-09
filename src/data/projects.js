@@ -11,13 +11,15 @@ export const projects = [
     description: 'Built validation and traceability features for manufacturing workflows, reducing production errors by 30% and improving efficiency.',
     company: 'Nextworld',
     tags: ['ERP', 'Validation', 'Traceability', 'Agile Delivery'],
-    links: { github: '', demo: '' }
+    links: { github: '', demo: '' },
+    highlight: true
   },
   {
     title: 'Test Suite Migration (Ruby → JavaScript)',
     description: 'Migrated 2,000+ automated tests to JavaScript, cutting runtime by 50% and streamlining CI/CD deployment cycles.',
     company: 'Aetna',
     tags: ['QA Automation', 'JavaScript', 'Ruby', 'CI/CD'],
-    links: { github: '', demo: '' }
+    links: { github: '', demo: '' },
+    highlight: true
   }
 ];

@@ -185,7 +185,7 @@ footer {
 .to-top {
   position: fixed; right: 24px; bottom: 24px; z-index: 40;
   display: inline-flex; align-items: center; justify-content: center;
-  width: 44px; height: 44px; border-radius: 999px;
+  width: 48px; height: 48px; border-radius: 999px;
   border: 1px solid var(--border);
   background: linear-gradient(180deg, color-mix(in srgb, var(--bg-elev) 94%, transparent), var(--card));
   color: var(--text);
@@ -195,6 +195,8 @@ footer {
 .to-top.show { opacity: 1; transform: translateY(0); pointer-events: auto; }
 .to-top:hover { transform: translateY(-2px); box-shadow: 0 14px 34px rgba(0,0,0,0.2); }
 .to-top:focus-visible { outline: 2px solid var(--brand); outline-offset: 3px; }
+.to-top svg { width: 22px; height: 22px; fill: currentColor; }
+.to-top:hover { border-color: color-mix(in srgb, var(--brand) 40%, var(--border)); }
 
 @media (max-width: 640px) {
   .to-top { right: 16px; bottom: 16px; }

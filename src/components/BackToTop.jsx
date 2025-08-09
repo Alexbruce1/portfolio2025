@@ -25,9 +25,10 @@ export default function BackToTop() {
       aria-label="Back to top"
       title="Back to top"
     >
-      ↑
+      <svg aria-hidden="true" viewBox="0 0 24 24" focusable="false">
+        <path d="M6.7 14.7a1 1 0 0 1-1.4-1.4l6-6a1 1 0 0 1 1.4 0l6 6a1 1 0 1 1-1.4 1.4L12 9.41l-5.3 5.3z"/>
+      </svg>
       <span className="sr-only">Back to top</span>
     </button>
   );
 }
-

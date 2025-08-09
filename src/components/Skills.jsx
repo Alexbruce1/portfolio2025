@@ -3,7 +3,7 @@ import React from 'react';
 const SKILLS = [
   { name: 'JavaScript', exp: '6+ yrs' },
   { name: 'TypeScript', exp: '3 yrs' },
-  { name: 'Python', exp: 'In progress' },
+  { name: 'Python', exp: '2025 coursework' },
   { name: 'Pandas', exp: '2025 coursework' },
   { name: 'NumPy', exp: '2025 coursework' },
   { name: 'scikit-learn', exp: '2025 coursework' },

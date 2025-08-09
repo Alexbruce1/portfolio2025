@@ -6,12 +6,12 @@ export default function Header({ onToggleTheme, theme }) {
       <div className="container nav">
         <a href="#home" className="brand" aria-label="Home, dev portfolio brand">dev<span className="dot">.</span>portfolio</a>
         <nav className="nav-links" aria-label="Primary">
-          <a href="#projects" className="hide-sm">Projects</a>
+          <a href="#projects" className="hide-sm">Highlights</a>
+          <a href="#skills" className="hide-sm">Skills</a>
           <a href="#experience" className="hide-sm">Experience</a>
           <a href="#education" className="hide-sm">Education</a>
           <a href="#certifications" className="hide-sm">Certifications</a>
           <a href="#about" className="hide-sm">About</a>
-          <a href="#skills" className="hide-sm">Skills</a>
           <a href="#contact">Contact</a>
           <button
             className="btn"

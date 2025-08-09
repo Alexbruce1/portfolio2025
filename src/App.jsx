@@ -31,11 +31,11 @@ export default function App() {
       <main id="main-content" role="main">
         <Hero />
         <Projects />
+        <Skills />
         <Experience />
         <Education />
         <Certifications />
         <About />
-        <Skills />
         <Contact />
       </main>
       <Footer year={year} />

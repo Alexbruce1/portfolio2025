@@ -83,6 +83,8 @@ section .section-title {
 }
 .pill:hover { border-color: color-mix(in srgb, var(--brand) 40%, var(--border)); box-shadow: 0 4px 12px rgba(0,0,0,0.12); }
 .pill.company { background: linear-gradient(180deg, color-mix(in srgb, var(--brand) 12%, var(--card)), var(--card)); border-color: color-mix(in srgb, var(--brand) 35%, var(--border)); }
+.pill.success { border-color: var(--ok); }
+.pill.warn { border-color: var(--warn); }
 
 .grid {
   display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px;

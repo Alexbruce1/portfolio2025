@@ -1,4 +1,5 @@
 import React from 'react';
+import { utaustin } from '../data/utaustin.js';
 
 export default function Education() {
   return (
@@ -26,7 +27,9 @@ export default function Education() {
           <article className="card highlight" aria-labelledby="edu-utaustin">
             <div className="body">
               <h3 id="edu-utaustin">The University of Texas at Austin</h3>
-              <p className="muted" style={{marginTop: 6}}>Graduate Certificate — Data Science and Business Analytics (Apr 2025 – Dec 2025)</p>
+              <p className="muted" style={{marginTop: 6}}>
+                {utaustin.program} ({utaustin.duration})
+              </p>
               <div className="tags" style={{marginTop: 8}}>
                 <span className="pill company">Featured</span>
                 <span className="pill">In Progress</span>
@@ -36,6 +39,30 @@ export default function Education() {
                 <span className="pill">Machine Learning</span>
                 <span className="pill">Statistics</span>
                 <span className="pill">Data Visualization</span>
+              </div>
+              <div className="stats" style={{display:'flex', gap:8, flexWrap:'wrap', marginTop: 12}}>
+                <span className="pill">GPA <span className="meta">{utaustin.gpa}</span></span>
+                <span className="pill">Credits <span className="meta">{utaustin.creditsEarned}</span></span>
+                <span className="pill success">Complete <span className="meta">{utaustin.coursesComplete}</span></span>
+                <span className="pill warn">In Progress <span className="meta">{utaustin.coursesInProgress}</span></span>
+              </div>
+              <h4 style={{margin:'16px 0 10px', fontSize:16}}>Coursework</h4>
+              <div className="grid" style={{gridTemplateColumns:'repeat(2, minmax(0, 1fr))'}}>
+                {utaustin.courses.map((c) => (
+                  <article key={c.title} className={`card${c.status === 'In Progress' ? ' highlight' : ''}`} aria-label={`${c.title} — ${c.status}`}>
+                    <div className="body">
+                      <div style={{display:'flex', justifyContent:'space-between', alignItems:'start', gap:10}}>
+                        <h3 style={{margin:'0 0 6px', fontSize:16}}>{c.title}</h3>
+                        <span className={`pill ${c.status === 'Complete' ? 'success' : 'warn'}`}>{c.status}</span>
+                      </div>
+                      <div className="muted" style={{display:'flex', gap:12, flexWrap:'wrap'}}>
+                        {c.grade ? <span>Grade: {c.grade}</span> : null}
+                        <span>Score: {c.score}</span>
+                        <span>Credits: {c.credits}</span>
+                      </div>
+                    </div>
+                  </article>
+                ))}
               </div>
             </div>
           </article>

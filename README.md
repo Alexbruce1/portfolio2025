@@ -13,6 +13,13 @@ npm run dev
 - Build: `npm run build`
 - Preview build: `npm run preview`
 
+## Features
+
+- Responsive layout with polished cards, grid, and sticky header
+- Light/dark theme with local preference and system fallback
+- Accessible navigation, focus styles, and reduced-motion support
+- Company labels on projects; profile photo support (`public/profile.jpg`)
+
 ## Customize
 
 - Update copy and links in:
@@ -26,8 +33,10 @@ npm run dev
 
 ## Deploy
 
-- Static hosting works well (Netlify, Vercel, GitHub Pages).
-- Build the site: `npm run build`, then deploy the `dist/` folder.
+- GitHub Pages is preconfigured via Actions on pushes to `main`.
+- Project Pages URL: `https://alexbruce1.github.io/portfolio2025/`
+- Local static hosting also works (Netlify, Vercel, GitHub Pages).
+- Manual: `npm run build`, deploy the `dist/` folder.
 
 ## Notes
 

@@ -74,8 +74,13 @@ export default function Skills() {
                       const years = Math.max(0, nowY - y);
                       label = years === 0 ? 'less than 1 yr' : years === 1 ? '1 yr' : `${years} yrs`;
                     }
+                    const titleText = s.exp
+                      ? `${s.name} — ${s.exp}`
+                      : (s.since
+                          ? `${s.name} — using since ${typeof s.since === 'string' ? s.since.slice(0,4) : s.since} (${label})`
+                          : s.name);
                     return (
-                      <span key={s.name} className="pill">
+                      <span key={s.name} className="pill" title={titleText}>
                         {s.name}
                         {label ? <span className="meta">• {label}</span> : null}
                       </span>

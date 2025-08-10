@@ -23,11 +23,7 @@ export default function Hero() {
         </div>
         <div>
           <figure className="profile" aria-label="Profile photo">
-            <img
-              src={`${import.meta.env.BASE_URL}profile.jpg`}
-              alt="Alex Bruce headshot"
-              loading="lazy"
-            />
+            <img src="/profile.jpg" alt="Headshot of Alex Bruce" loading="lazy" decoding="async" />
           </figure>
           <div className="card" aria-label="Quick facts">
             <div className="body">

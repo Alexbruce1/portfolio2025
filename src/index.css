@@ -7,6 +7,7 @@ body {
   background: radial-gradient(1200px 800px at 80% -10%, rgba(106,163,255,0.15), transparent),
               radial-gradient(1000px 700px at -10% -20%, rgba(155,123,255,0.14), transparent),
               var(--bg);
+  background-color: var(--bg);
   color: var(--text);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
@@ -54,6 +55,9 @@ header.site-header {
   background: color-mix(in srgb, var(--bg) 84%, transparent);
   border-bottom: 1px solid var(--border);
 }
+/* Theme-specific header fallbacks (improves mobile Safari clarity) */
+[data-theme="light"] header.site-header { background: rgba(247,249,255,0.85); }
+[data-theme="dark"] header.site-header { background: rgba(11,16,32,0.65); }
 .nav {
   display: flex; align-items: center; justify-content: space-between;
   height: 64px;
@@ -225,6 +229,8 @@ footer {
   .grid { grid-template-columns: 1fr; }
   .nav-links .hide-sm { display: none; }
   .contact-links { flex-wrap: wrap; }
+  body { background: var(--bg); }
+  body::before { display: none; }
 }
 
 /* Reduce motion preferences */
@@ -234,6 +240,12 @@ footer {
 
 /* Tone down ambient glow on light theme */
 [data-theme="light"] body::before { opacity: .08; filter: blur(90px) saturate(110%); }
+/* Light theme: soften page background accents */
+[data-theme="light"] body {
+  background: radial-gradient(1200px 800px at 80% -10%, rgba(106,163,255,0.08), transparent),
+              radial-gradient(1000px 700px at -10% -20%, rgba(155,123,255,0.06), transparent),
+              var(--bg);
+}
 
 /* Featured card highlight and skill meta */
 .card.highlight { border-color: color-mix(in srgb, var(--brand) 45%, var(--border)); box-shadow: 0 12px 36px rgba(0,0,0,0.18); }

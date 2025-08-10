@@ -176,6 +176,8 @@ section .section-title {
 .tags { display: flex; flex-wrap: wrap; gap: 8px; }
 
 .skills { display: flex; flex-wrap: wrap; gap: 10px; }
+.skills-groups { display: flex; flex-direction: column; gap: 18px; }
+.skills-group-title { margin: 0 0 6px; font-size: 13px; letter-spacing: 0.4px; text-transform: uppercase; color: var(--muted); }
 .contact-links { display: flex; gap: 12px; align-items: center; }
 .contact-links a { border-bottom: 1px dashed var(--border); }
 .contact-links a:hover { color: var(--brand); border-bottom-color: color-mix(in srgb, var(--brand) 50%, var(--border)); }

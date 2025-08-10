@@ -178,6 +178,11 @@ section .section-title {
 .skills { display: flex; flex-wrap: wrap; gap: 10px; }
 .skills-groups { display: flex; flex-direction: column; gap: 18px; }
 .skills-group-title { margin: 0 0 6px; font-size: 13px; letter-spacing: 0.4px; text-transform: uppercase; color: var(--muted); }
+.skills-note { margin: 2px 0 8px; }
+.skills-note summary { cursor: pointer; font-size: 12px; color: var(--muted); list-style: none; }
+.skills-note summary::-webkit-details-marker { display: none; }
+.skills-note[open] summary { color: inherit; }
+.skills-note p.small { margin: 6px 0 0; font-size: 12px; }
 .contact-links { display: flex; gap: 12px; align-items: center; }
 .contact-links a { border-bottom: 1px dashed var(--border); }
 .contact-links a:hover { color: var(--brand); border-bottom-color: color-mix(in srgb, var(--brand) 50%, var(--border)); }

@@ -65,6 +65,16 @@ export default function Skills() {
             return (
               <div key={group.label} className="skills-group">
                 <h3 className="skills-group-title">{group.label}</h3>
+                <details className="skills-note">
+                  <summary aria-label={`About ${group.label}`}>About {group.label}</summary>
+                  <p className="muted small">
+                    {group.label === 'Frontend' && 'UI engineering with accessibility, performance, and responsive design.'}
+                    {group.label === 'Backend & Platform' && 'APIs, data access, cloud fundamentals, and developer tooling.'}
+                    {group.label === 'Testing & QA' && 'Unit/integration/E2E automation, CI gating, and quality culture.'}
+                    {group.label === 'Data & ML' && 'Current coursework: Python data stack and modeling foundations.'}
+                    {group.label === 'Practices & Collaboration' && 'Agile delivery, TDD, reviews, and team workflows.'}
+                  </p>
+                </details>
                 <div className="skills">
                   {items.map((s) => {
                     let label = s.exp || '';
